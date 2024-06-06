@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="checkUserLogin()">
+
+<div id="loginPage" class="page">
+    <h1>To Do App using Local Storage</h1>
+    <input type="email" id="email" placeholder="Enter Email" class="input">
+    <button onclick="login()" class="btn">Login</button>
+    <footer class="footer">
+        Made by Muhammad Haseeb
+    </footer>
+</div>
+
+<div id="homePage" class="page">
+    <h2>Welcome</h2>
+    <p id="userEmailDisplay" class="email-display"></p>
+    <button onclick="logout()" class="btn">Logout</button>
+    <div class="note-container">
+        <h3>Add Note</h3>
+        <textarea id="noteInput" placeholder="Enter your note" class="input"></textarea>
+        <button onclick="submitNote()" class="btn">Submit</button>
+    </div>
+    <div id="notesList" class="notes-list"></div>
+
+    
+</div>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
